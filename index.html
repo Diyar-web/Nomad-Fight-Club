@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NOMAD FIGHT CLUB</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="LOGO_text">
+        <a href="index.html"
+          ><img class="logo" src="./img/Nomad_fight.jpg" alt=""
+        /></a>
+        <a href="index.html"><h1>NOMAD FIGHT CLUB</h1></a>
+      </div>
+      <nav>
+        <a href="#About_us">О нас </a>
+        <a href="#Couch_list">Тренерский состав</a>
+        <a href="#Maps">Мы тут</a>
+        <a href="#Contact">Свяжись с нами</a>
+      </nav>
+    </header>
+
+    <section id="About_us" class="marg">
+      <div class="Top_Text">
+        <h1>О нас</h1>
+      </div>
+      <div class="content">
+        <div class="video">
+          <iframe
+            class="VIDEO"
+            width="1160"
+            height="715"
+            src="https://www.youtube.com/embed/jkuPy3OBhA4?si=SjRO1rs2MaPOUatD"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="Main_text">
+          <p>
+            NOMAD FIGHT CLUB — это спортивный клуб, объединяющий силу,
+            дисциплину и дух воина. Мы обучаем не только технике единоборств, но
+            и формируем характер: стойкость, уважение, выносливость и
+            самообладание. Наш клуб основан на принципах чести, традиций и
+            современного подхода к тренировкам. Здесь каждый — от новичка до
+            опытного бойца — получает поддержку, мотивацию и возможность
+            развиваться. Мы предлагаем профессиональные тренировки по
+            универсальному бою (UNIFIGHT) — дисциплине, включающей бег, полосу
+            препятствий, рукопашный бой и борьбу. Это уникальный комплекс,
+            развивающий бойца всесторонне. Также в клубе проводятся занятия по
+            смешанным единоборствам (ММА), боксу, грэпплингу и борьбе. Отдельное
+            внимание уделяется физической подготовке, кроссфиту и работе на
+            выносливость и силу. Для детей организованы специальные группы с
+            упором на координацию, дисциплину и базовую технику в безопасной
+            форме. Мы готовим спортсменов к соревнованиям, обеспечиваем
+            индивидуальный подход и создаём атмосферу настоящей команды. В NOMAD
+            FIGHT CLUB мы воспитываем бойцов — сильных телом и духом.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Couch_list" class="marg">
+      <div class="Top_Text">
+        <h1>Наши тренеры</h1>
+      </div>
+      <div class="cards_container">
+        <div class="card">
+          <img
+            src="./img/Снимок экрана 2025-06-23 001220.png"
+            alt="Рахимжан Айтахунов"
+          />
+        </div>
+        <div class="card">
+          <img src="./img/Марат.png" alt="Марат" />
+        </div>
+        <div class="card">
+          <img src="./img/Есен.png" alt="Есен" />
+        </div>
+        <div class="card">
+          <img src="./img/Габит.png" alt="Габит" />
+        </div>
+        <div class="card">
+          <img src="./img/Аскар.png" alt="Аскар" />
+        </div>
+      </div>
+    </section>
+    <section id="Maps">
+      <div class="Top_Text">
+        <h1>Мы находимся тут</h1>
+      </div>
+      <div class="content">
+        <iframe
+          class="maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1027.3333744297627!2d76.8921431153594!3d43.25692632739364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x388369671c9afcc7%3A0x5f2272098609c26c!2sSparta%20Fitness!5e0!3m2!1sru!2skz!4v1750616893992!5m2!1sru!2skz"
+          width="85%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <section id="Contact">
+      <div class="Top_Text">
+        <h1>Свяжитесь с нами</h1>
+      </div>
+
+      <a
+        class="whatsapp-button"
+        href="https://wa.me/77475348489"
+        target="_blank"
+      >
+        <img src="./img/free-icon-whatsapp-160200.png" alt="" />Напиши нам</a
+      >
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./img/Nomad_fight.jpg" alt="Логотип" />
+        </div>
+        <p>&copy; 2025 Все права защищены</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    document
+      .querySelectorAll(".card, .Main_text, .Top_Text, .video, #Contact")
+      .forEach((el) => {
+        el.style.opacity = 0;
+        el.style.transform = "translateY(50px)";
+        el.style.transition = "all 0.6s ease-out";
+        observer.observe(el);
+      });
+  </script>
+</html>
